@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:shopping_list_app/screens/grocery_list.dart';
 
 main() {
   runApp(MyApp());
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Shopping App',
       theme: ThemeData.dark().copyWith(
         useMaterial3: true,
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
         ),
         scaffoldBackgroundColor: Color.fromARGB(255, 50, 58, 60)
       ),
-     // home: ,
+     home: GroceryList(),
     );
   }
 }

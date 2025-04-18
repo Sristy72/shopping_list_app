@@ -17,7 +17,7 @@ var categories = {
   ),
   Categories.dairy: Category(
     title: 'Dairy',
-    color: Color.fromARGB(255, 0, 208, 255),
+    color: Colors.white
   ),
   Categories.carbs: Category(
     title: 'Carbs',
